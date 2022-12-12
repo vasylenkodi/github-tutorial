@@ -1,0 +1,120 @@
+.hotel {
+  position: relative;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  @include tablet {
+    padding-top: 62px;
+  padding-bottom: 40px;
+  }
+  @include desktop {
+  padding-top: 72px;
+  }
+}
+
+.hotel__text {
+    @extend .about-restaurant__subtitle;
+    margin-bottom: 8px;
+}
+
+.hotel__logo {
+    @extend .about-restaurant__logo;
+    margin-bottom: 32px;
+
+    @include tablet {
+    margin-bottom: 62px;
+  }
+  @include desktop {
+    margin-bottom: 72px;
+    color: $secondaryTitleColor;
+  }
+}
+
+.hotel__title {
+    // шрифти
+    font-family: 'Times New Roman', serif;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+    color: $mainDarkColor;
+
+    margin-bottom: 12px;
+
+    @include tablet {
+        font-size: 30px;
+        line-height: 1.13;
+        margin-bottom: 16px;
+    }
+    @include desktop {
+        font-size: 36px;
+        line-height: 1.14;
+        margin-bottom: 14px;
+    }
+}
+
+.hotel__aftetitle {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: $primaryTextColor;
+    max-width: 258px;
+    margin-bottom: 32px;
+
+    @include tablet {
+        margin-bottom: 176px;
+        font-size: 16px;
+        max-width: 439px;
+    }
+    @include desktop {
+        margin-bottom: 188px;
+    }
+}
+
+.hotel__thumb {
+    margin-left: auto;
+  width: 246px;
+  margin-bottom: 32px;
+  @include tablet {
+    position: absolute;
+    top: -32px;
+    right: 65px;
+    margin-left: 0;
+    width: 400px;
+    margin-bottom: 0;
+  }
+  @include desktop {
+    top: -33px;
+    right: 95px;
+    width: 460px;
+  }
+}
+
+.hotel__slider-wrap {
+    
+}
+
+.hotel-slider__item {
+
+}
+
+.slider-class__item {
+    display: none;
+}
+
+.hotel__link {
+    box-sizing: border-box;
+    width: 236px;
+    margin-bottom: 16px;
+    @media screen and (max-width: 1023px) {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.hotel__button {
+    @media screen and (max-width: 1023px) {
+        display: block;
+        margin: 0 auto;
+    }
+}

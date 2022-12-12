@@ -1,0 +1,54 @@
+.hotel--secondary-bg-color {
+    background-color: $secondaryBgColor;
+}
+
+.hotel__container--right {
+      position: relative;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  @include tablet {
+    padding-top: 62px;
+  padding-bottom: 40px;
+  }
+  @include desktop {
+  padding-top: 72px;
+  }
+}
+
+.hotel__text--right {
+    text-align: right;
+}
+
+.hotel__logo--right {
+    text-align: right;
+}
+
+.hotel__wrap--right {
+    max-width: 302px;
+    margin-left: auto;
+    @include tablet {
+        max-width: 400px;
+    }
+    @include desktop {
+        max-width: 453px;
+    }
+}
+
+.hotel__thumb--right {
+        margin-right: auto;
+  width: 246px;
+  margin-bottom: 32px;
+  @include tablet {
+    position: absolute;
+    top: -32px;
+    left: 65px;
+    margin-left: 0;
+    width: 400px;
+    margin-bottom: 0;
+  }
+  @include desktop {
+    top: -33px;
+    left: 95px;
+    width: 460px;
+  }
+}
